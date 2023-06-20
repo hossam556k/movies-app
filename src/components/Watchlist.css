@@ -1,0 +1,40 @@
+.watch-list{
+    padding:30px 0 ;
+}
+.watch-list .main-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.movies-count{
+    display: block;
+    background-color: var(--secondary);
+    color:white;
+    padding: 5px 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 999px;
+}
+.watch-list h1{
+    margin: 0;
+    color:var(--primary);
+}
+.movie-grid {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+@media (min-width: 992px) {
+    .movie-grid{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+}
+
+.watch-list .no-movie{
+    color: #c4c4c4;
+    font-size: 3rem;
+    text-align: center;
+}
